@@ -3,7 +3,6 @@
 > 用于同步git远程仓库的配置文件，需要配合rabbitmq消息中间件使用，默认端口：8888。
 
 下面是关于配置文件的介绍：
-
 ```properties
 # 远程仓库地址
 spring.cloud.config.server.git.uri=https://gitee.com/fiveplus/biohub-config/
@@ -20,7 +19,6 @@ spring.cloud.config.server.git.password=<your password>
 远程仓库配置文件命名方式： `{application-name}-{profile}.properties`
 
 service-zuul-dev.properties
-
 ```properties
 zuul.routes.user.path=/user-service/**
 zuul.routes.user.service-id=user-service
@@ -34,7 +32,6 @@ zuul.routes.user.service-id=user-service
 > 网关出口，所有的子服务出口，默认端口：8769。
 
 bootstrap.properties文件中指定Config Server地址：
-
 ```properties
 # 项目名称
 spring.application.name=service-zuul
