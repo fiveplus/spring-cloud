@@ -13,6 +13,8 @@
         <module>config-server</module>
         <module>zuul-server</module>
         <module>user-service</module>
+        <module>api-service</module>
+        <module>test-service</module>
     </modules>
 
     <parent>

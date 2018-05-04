@@ -1,10 +1,12 @@
-package com.fiveplus.util;
+package com.fiveplus.api.util;
 
-public class Result {
+public class Result<T> {
 	private int code;
-	private Object result;
+	private T result;
+
+	public Result(){}
 	
-	public Result(int code, Object result) {
+	public Result(int code, T result) {
 		this.code = code;
 		this.result = result;
 	}
@@ -15,10 +17,10 @@ public class Result {
 	public void setCode(int code) {
 		this.code = code;
 	}
-	public Object getResult() {
+	public T getResult() {
 		return result;
 	}
-	public void setResult(Object result) {
+	public void setResult(T result) {
 		this.result = result;
 	}
 	
